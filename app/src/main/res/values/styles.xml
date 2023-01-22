@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="Widget.OpenVPNWidget.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">@color/widget_background_color</item>
+    </style>
+
+    <style name="Widget.OpenVPNWidget.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:textColor">@color/widget_text_color</item>
+    </style>
+
+    <style name="SwitchCompatStyle" >
+        <item name="thumbTint">@drawable/widget_switch_color</item>
+        <item name="trackTint">@drawable/widget_switch_background_color</item>
+    </style>
+
+    <style name="ButtonCompatStyle" >
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:height">40dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonCompatStyle.Red" parent="ButtonCompatStyle" >
+        <item name="android:background">@drawable/app_widget_background_button_red</item>
+    </style>
+    <style name="ButtonCompatStyle.Green" parent="ButtonCompatStyle" >
+        <item name="android:background">@drawable/app_widget_background_button_green</item>
+    </style>
+</resources>

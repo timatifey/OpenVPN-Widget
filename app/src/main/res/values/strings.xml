@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OpenVPN-Widget</string>
+    <string name="appwidget_text">Profile</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">Widget for switching VPN state</string>
+    <string name="title_activity_settings">Widget Settings</string>
+    <string name="profile_name">Picked profile name</string>
+    <string name="icon">icon</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+</resources>
