@@ -41,12 +41,14 @@ internal fun updateAppWidget(
             R.id.appwidget_settings,
             context.buildOpenSettingsActivityIntent()
         )
-        if (profileName == null) {
+        if (profileName.isNullOrEmpty()) {
             setTextViewText(R.id.appwidget_profile, "Need pick profile")
             setViewVisibility(R.id.appwidget_btn_connect, View.GONE)
             setViewVisibility(R.id.appwidget_btn_disconnect, View.GONE)
         } else {
             setTextViewText(R.id.appwidget_profile, profileName)
+            setViewVisibility(R.id.appwidget_btn_connect, View.VISIBLE)
+            setViewVisibility(R.id.appwidget_btn_disconnect, View.VISIBLE)
             setOnClickPendingIntent(
                 R.id.appwidget_btn_connect,
                 context.buildConnectByProfileIntent(profileName)
